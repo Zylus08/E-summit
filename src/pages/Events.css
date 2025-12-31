@@ -1,0 +1,28 @@
+.events-content {
+    padding: var(--spacing-md);
+}
+
+.events-filter {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    overflow-x: auto;
+    padding-bottom: var(--spacing-xs);
+}
+
+.filter-chip {
+    background-color: rgba(2, 48, 71, 0.5);
+    border: 1px solid rgba(142, 202, 230, 0.2);
+    color: var(--support-blue);
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    font-size: 12px;
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+}
+
+.filter-chip.active {
+    background-color: var(--brand-blue);
+    color: white;
+    border-color: var(--brand-blue);
+}

@@ -1,0 +1,69 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    padding: 0 var(--spacing-lg);
+    border-radius: var(--radius-md);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all var(--transition-fast);
+    text-transform: uppercase;
+    gap: var(--spacing-sm);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+/* Primary: Orange Accent */
+.btn-primary {
+    background-color: var(--primary-accent);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(251, 133, 0, 0.3);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+    background-color: #e07600;
+}
+
+/* Secondary: Brand Blue or Yellow Accent depending on context, using Brand Blue for now as per "Support Blue" structural layers but Secondary Accent is Yellow. 
+   Request says: "Secondary Accent (headings, active states, highlights): #FFB703".
+   Let's make Secondary Button use the Secondary Accent (#FFB703) or Brand Blue?
+   Usually Secondary button is less prominent. Let's use Brand Blue for "Secondary" actions and Yellow for "Highlights".
+   Actually, let's stick to the palette roles. 
+   Primary Accent (CTAs) -> #FB8500.
+   Let's make Secondary Button use the Dark Contrast with a border, or Brand Blue.
+   Let's go with Brand Blue background for Secondary.
+*/
+.btn-secondary {
+    background-color: var(--brand-blue);
+    color: #ffffff;
+}
+
+.btn-secondary:active {
+    transform: scale(0.98);
+    background-color: #1a86a3;
+}
+
+/* Ghost: Transparent with border or just text */
+.btn-ghost {
+    background-color: transparent;
+    color: var(--support-blue);
+    border: 1px solid rgba(142, 202, 230, 0.3);
+}
+
+.btn-ghost:hover {
+    background-color: rgba(142, 202, 230, 0.1);
+    border-color: var(--support-blue);
+    color: #ffffff;
+}
+
+.btn-ghost:active {
+    transform: scale(0.98);
+}

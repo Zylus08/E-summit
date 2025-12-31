@@ -1,0 +1,120 @@
+.live-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.live-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+}
+
+.live-placeholder {
+    text-align: center;
+    background: rgba(2, 48, 71, 0.5);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--brand-blue);
+    width: 100%;
+}
+
+.live-indicator-large {
+    color: #ff0000;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: var(--spacing-md);
+}
+
+.pulse {
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.live-placeholder h2 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.live-placeholder p {
+    color: var(--support-blue);
+    margin-bottom: var(--spacing-lg);
+}
+
+.video-player {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: black;
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.video-bg {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--spacing-md);
+}
+
+.live-badge {
+    background-color: #ff0000;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    align-self: flex-start;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.video-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--spacing-md);
+}
+
+.video-controls button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

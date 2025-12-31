@@ -1,0 +1,109 @@
+.event-detail-page {
+    background-color: var(--bg-dark);
+    min-height: 100vh;
+}
+
+.event-hero {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.event-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, var(--bg-dark) 100%);
+    padding: var(--spacing-md);
+}
+
+.back-button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.event-detail-content {
+    padding: var(--spacing-lg);
+    margin-top: -40px;
+    position: relative;
+    z-index: 2;
+}
+
+.event-badge {
+    background-color: var(--secondary-accent);
+    color: var(--bg-dark);
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: var(--spacing-sm);
+}
+
+.detail-title {
+    font-size: 28px;
+    margin-bottom: var(--spacing-lg);
+}
+
+.event-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+    background-color: rgba(2, 48, 71, 0.3);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(142, 202, 230, 0.1);
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.info-item label {
+    font-size: 12px;
+    color: var(--support-blue);
+    display: block;
+}
+
+.info-item p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.event-description h3 {
+    font-size: 18px;
+    margin-bottom: var(--spacing-sm);
+    color: var(--secondary-accent);
+}
+
+.event-description p {
+    color: var(--support-blue);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-xl);
+}
+
+.event-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.secondary-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
